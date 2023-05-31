@@ -41,17 +41,29 @@
             <button class="btn-cadastrar">
               Ainda não tem conta? Cadastre-se aqui!
             </button>
-            <dialog id="modalContainer" open>
+            <dialog id="modalContainer">
               <section class="modal_section">
                     <h3>Cadestre-se</h3>
                       <div class="modal_inputs">
-                           <input type="text" placeholder="Seu melhor email" style="padding-left: 5px;">
-                           <input type="password" placeholder="Sua senha" style="padding-left: 5px;">
-                           <input type="date">
-                      </div>    
+                        <label for="input__email">Email</label>
+                        <input class="input__email" type="text" placeholder="Seu melhor email" style="padding-left: 5px;"
+                        <label for="input__password">Senha</label>
+                        <input class="input__password" type="password" placeholder="Sua senha" style="padding-left: 5px;">
+                        <label for="input__date">Data</label>
+                        <input class="input__date" type="date">
+                        <div class="modal__checkbox">
+                          <label class="label__checkbox" for="input__checkbox">Concordo com os termos de registro.</label>
+                          <input class="input__checkbox" type="checkbox">
+                        </div>
+                      </div>  
+                      <div class="modal__button">
+                           <button class="modal__input-button">Cadastre-se</button>
+                      </div>  
                   </section>
             </dialog>
             <button class="btn-logar">Logar</button>
+            <div class="modal-background"></div>
+          </div>
           </div>
         </section>
       </div>
